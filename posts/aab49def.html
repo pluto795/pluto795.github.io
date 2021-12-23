@@ -1,0 +1,479 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Python实例合集 | 她说</title><meta name="keywords" content="Python"><meta name="author" content="漓曜"><meta name="copyright" content="漓曜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一些Python实例，其实是为了考试整理的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python实例合集">
+<meta property="og:url" content="http://shesays.xyz/posts/aab49def.html">
+<meta property="og:site_name" content="她说">
+<meta property="og:description" content="一些Python实例，其实是为了考试整理的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover2.jpg">
+<meta property="article:published_time" content="2021-12-10T18:03:05.000Z">
+<meta property="article:modified_time" content="2021-12-23T05:15:41.603Z">
+<meta property="article:author" content="漓曜">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover2.jpg"><link rel="shortcut icon" href="/img/favicon001.png"><link rel="canonical" href="http://shesays.xyz/posts/aab49def"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://unpkg.com/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'mediumZoom',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://unpkg.com/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://unpkg.com/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://unpkg.com/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://unpkg.com/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://unpkg.com/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Python实例合集',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-12-23 05:15:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    document.addEventListener('pjax:complete', detectApple)})(window)</script><style type="text/css">#toggle-sidebar {left:100px}</style><link rel="stylesheet" href="/css/background.css"><link rel="stylesheet" href="/css/custom.css"><link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,300&display=swap" rel="stylesheet"><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-butterfly-artitalk-pro/lib/card.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-butterfly-clock/lib/clock.min.css"><link rel="stylesheet" href="https://unpkg.com/hexo-butterfly-footer-beautify@1.0.0/lib/runtime.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://unpkg.com/hexo-butterfly-swiper/lib/swiper.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/Swiper/4.1.6/css/swiper.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-butterfly-swiper/lib/swiperstyle.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/l-lin/font-awesome-animation/dist/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.min.css" media="defer" onload="this.media='all'"><script async src="https://unpkg.com/hexo-butterfly-tag-plugins-plus@latest/lib/carousel-touch.min.js"></script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="wizard-scene"><div class="wizard-objects"><div class="wizard-square"></div><div class="wizard-circle"></div><div class="wizard-triangle"></div></div><div class="wizard"><div class="wizard-body"></div><div class="wizard-right-arm"><div class="wizard-right-hand"></div></div><div class="wizard-left-arm"><div class="wizard-left-hand"></div></div><div class="wizard-head"><div class="wizard-beard"></div><div class="wizard-face"><div class="wizard-adds"></div></div><div class="wizard-hat"><div class="wizard-hat-of-the-hat"></div><div class="wizard-four-point-star --first"></div><div class="wizard-four-point-star --second"></div><div class="wizard-four-point-star --third"></div></div></div></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">12</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-032-temple"></use></svg><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-048-hanami"></use></svg><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-050-sakura"></use></svg><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-041-dango"></use></svg><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-019-hanami"></use></svg><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-016-hanami"></use></svg><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/love/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-018-picnic"></use></svg><span> 我们</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-027-geisha"></use></svg><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/post.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">她说</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-032-temple"></use></svg><span> 首頁</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-048-hanami"></use></svg><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-050-sakura"></use></svg><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-041-dango"></use></svg><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-019-hanami"></use></svg><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/comments/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-016-hanami"></use></svg><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/love/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-018-picnic"></use></svg><span> 我们</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-027-geisha"></use></svg><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Python实例合集</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-10T18:03:05.000Z" title="发表于 2021-12-10 18:03:05">2021-12-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-12-23T05:15:41.603Z" title="更新于 2021-12-23 05:15:41">2021-12-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Python%E5%A4%8D%E4%B9%A0%E7%AC%94%E8%AE%B0/">Python复习笔记</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Python实例合集"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="1-绘制同切圆"><a href="#1-绘制同切圆" class="headerlink" title="1.绘制同切圆"></a>1.绘制同切圆</h1><p>turtle.circle(<strong>radius</strong>, extent=None)</p>
+<span class='p red'>radius</span>:弧形半径
+
+<span class='p red'>extent</span>:弧形角度
+
+
+
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle</span><br><span class="line">turtle.pensize(<span class="number">2</span>)</span><br><span class="line">turtle.circle(<span class="number">10</span>)</span><br><span class="line">turtle.circle(<span class="number">40</span>)</span><br><span class="line">turtle.circle(<span class="number">80</span>)</span><br><span class="line">turtle.circle(<span class="number">160</span>)</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/circle.png" alt=""></p>
+<h1 id="2-温度转换实例"><a href="#2-温度转换实例" class="headerlink" title="2.温度转换实例"></a>2.温度转换实例</h1><p>摄氏度与华氏度的换算为：<span class='p red'>**摄氏度*1.8+32=华氏度**</span></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">TempStr = <span class="built_in">input</span>(<span class="string">&quot;请输入带有符号的温度值:&quot;</span>) <span class="comment"># 获取输入</span></span><br><span class="line"><span class="keyword">if</span> TempStr[-<span class="number">1</span>] <span class="keyword">in</span> [<span class="string">&#x27;F&#x27;</span>, <span class="string">&#x27;f&#x27;</span>]:</span><br><span class="line">    <span class="comment"># []代表数据类型为列表类型，内元素用&#x27;,&#x27;隔开，表示多个元素</span></span><br><span class="line">    <span class="comment"># 用保留字in判断变量中的最后一个字符是否属于列表中的元素</span></span><br><span class="line">    <span class="comment"># 故该行代码为判断输入值的最后一个字符是否为华氏度符号F或f</span></span><br><span class="line">    C = (<span class="built_in">eval</span>(TempStr[<span class="number">0</span>:-<span class="number">1</span>]) - <span class="number">32</span>)/<span class="number">1.8</span></span><br><span class="line">    <span class="comment"># 如果是的话，取输入除最后一位的所有字符执行计算</span></span><br><span class="line">    <span class="comment"># [0:-1]这是切片的一种用法，代表取字符串的第0个元素到最后一个元素，但不包含最后一个元素</span></span><br><span class="line">    <span class="comment"># eval()   评估函数，将最外侧的引号去掉。详细见文末</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;转换后的温度是&#123;:.2f&#125;C&quot;</span>.<span class="built_in">format</span>(C))</span><br><span class="line">    <span class="comment"># 输出取浮点(Float)型且保留两位小数.format()函数是一种格式化函数</span></span><br><span class="line"><span class="keyword">elif</span> TempStr[-<span class="number">1</span>] <span class="keyword">in</span> [<span class="string">&#x27;C&#x27;</span>, <span class="string">&#x27;c&#x27;</span>]:</span><br><span class="line">    <span class="comment"># 判断输入值的最后一个字符是否为华氏度符号C或c</span></span><br><span class="line">    F = <span class="number">1.8</span>*<span class="built_in">eval</span>(TempStr[<span class="number">0</span>:-<span class="number">1</span>]) + <span class="number">32</span></span><br><span class="line">    <span class="comment"># 如果是的话，取输入除最后一位的所有字符执行计算</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;转换后的温度是&#123;:.2f&#125;F&quot;</span>.<span class="built_in">format</span>(F))</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="comment"># 当输入格式不符合以上两种情况时，判断格式错误</span></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;输入格式错误&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="1-eval函数"><a href="#1-eval函数" class="headerlink" title="(1).eval函数"></a>(1).eval函数</h2><p>eval() 函数用来执行一个字符串表达式，并返回表达式的值。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">eval</span>(<span class="string">&#x27;2 + 2&#x27;</span>)</span><br><span class="line"><span class="comment"># 4</span></span><br></pre></td></tr></table></figure>
+<p>如上，字符串’2+2’，本该不被计算机所识别执行，但可以使用eval函数来执行</p>
+<p>可以理解为eval函数去掉了字符串的最外层引号</p>
+<h2 id="2-format函数"><a href="#2-format函数" class="headerlink" title="(2).format函数"></a>(2).format函数</h2><p>本文暂时只介绍利用format函数格式化数字为两位小数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(<span class="number">3.1415926</span>))</span><br><span class="line"><span class="comment"># 3.14</span></span><br></pre></td></tr></table></figure>
+<h1 id="3-天天向上的力量"><a href="#3-天天向上的力量" class="headerlink" title="3.天天向上的力量"></a>3.天天向上的力量</h1><p>能力初始值为1.0，一周5个工作日努力，提高1%；仅在周末放任两天，能力值下降1%，若要一年后达到的努力值与每天努力1%的效果一样，工作日要努力到什么程度呢？</p>
+<p>分析：工作日水平变化<span class='p red'>N（1+0.01）</span>；非工作日<span class='p red'>N（1-0.01）</span>；采用<span class='p red'>for in</span>去遍历365天的计算思维</p>
+<p>​            每天努力1%，一年后的努力值为37.78，以计算机强大的计算能力，假设一个结果，计算验证，直到结果正确为止</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">DayUp</span>(<span class="params">df</span>):</span>		<span class="comment"># 定义函数DayUp</span></span><br><span class="line">    dayup = <span class="number">1.0</span></span><br><span class="line">    <span class="comment"># dayup(即对应题中能力)初始值为1.0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">365</span>):</span><br><span class="line">    <span class="comment"># 遍历365天</span></span><br><span class="line">        <span class="keyword">if</span> i%<span class="number">7</span> <span class="keyword">in</span> [<span class="number">6</span>, <span class="number">0</span>]:</span><br><span class="line">    <span class="comment"># 如果i除以7的余数是6或者0——表示周末</span></span><br><span class="line">            dayup = dayup*(<span class="number">1</span> - <span class="number">0.01</span>)</span><br><span class="line">    <span class="comment"># 则dayup变为前一天的(1-0.01)倍，即下降1%</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">    <span class="comment"># 否则——即表示工作日</span></span><br><span class="line">            dayup = dayup*(<span class="number">1</span> + df)</span><br><span class="line">    <span class="comment"># 则dayup变为前一天的(1+0.01)倍，即增高1%</span></span><br><span class="line">    <span class="keyword">return</span> dayup</span><br><span class="line">    <span class="comment"># 返回dayup的值</span></span><br><span class="line"> </span><br><span class="line">dayfactor = <span class="number">0.01</span></span><br><span class="line">    <span class="comment"># dayfactor(即对应工作日努力的程度)初始值为0.01</span></span><br><span class="line"><span class="keyword">while</span> DayUp(dayfactor) &lt; <span class="number">37.78</span>:</span><br><span class="line">    <span class="comment"># 当调用DayUp函数计算出最后的能力值小于37.78时</span></span><br><span class="line">     dayfactor += <span class="number">0.001</span></span><br><span class="line">    <span class="comment"># 令dayfactor的值增加0.001</span></span><br><span class="line">    <span class="comment"># 否则输出结果，并用format格式化为三位小数</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;工作日的努力提高到&#123;0:.3f&#125;,效果和天天向上的力量效果一样&quot;</span>.<span class="built_in">format</span>(dayfactor))</span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/dayup.png" alt=""></p>
+<h1 id="4-文本进度条"><a href="#4-文本进度条" class="headerlink" title="4.文本进度条"></a>4.文本进度条</h1><div class="tip warning"><p>Python3.8之后不再支持<span class='p blue'>time.clock()</span>，所以在此使用<span class='p blue'>time.perf_counter()</span>替换</p>
+</div>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line">scale = <span class="number">50</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;执行开始&quot;</span>.center(scale//<span class="number">2</span>,<span class="string">&quot;-&quot;</span>))</span><br><span class="line"><span class="comment"># 使用字符串处理中的.center方法，“-”字符填充在执行开始</span></span><br><span class="line">d = time.perf_counter()  <span class="comment"># 增加计时效果</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span> (scale+<span class="number">1</span>):</span><br><span class="line">  a = <span class="string">&#x27;*&#x27;</span>*i</span><br><span class="line">  b = <span class="string">&#x27;.&#x27;</span>*(scale-i)</span><br><span class="line">  c = (i/scale)*<span class="number">100</span></span><br><span class="line">  t = time.perf_counter()-d</span><br><span class="line">  <span class="comment"># 用来记录每一次用来打印文本进度条所用的时间</span></span><br><span class="line">  <span class="built_in">print</span>(<span class="string">&quot;\r&#123;:^3.0f&#125;%[&#123;&#125;-&gt;&#123;&#125;]&#123;:.2f&#125;s&quot;</span>.<span class="built_in">format</span>(c,a,b,t),end=<span class="string">&quot;&quot;</span>)</span><br><span class="line">  <span class="comment"># 为了使文本进度条有单行刷新效果，增加“\r”,实现光标向行首移动</span></span><br><span class="line">  <span class="comment"># 增加end函数，把end函数赋值为空字符串，在每次输出后不换行</span></span><br><span class="line">  time.sleep(<span class="number">0.05</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;\n&quot;</span>+<span class="string">&quot;执行结束&quot;</span>.center(scale//<span class="number">2</span>,<span class="string">&#x27;-&#x27;</span>))</span><br><span class="line"><span class="comment"># 使用字符串处理中的.center方法，“-”字符填充在执行结束</span></span><br></pre></td></tr></table></figure>
+<p>执行结果</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-----------执行开始----------</span><br><span class="line"><span class="number">100</span>%[**************************************************-&gt;]<span class="number">3.11</span>s</span><br><span class="line">-----------执行结束----------</span><br></pre></td></tr></table></figure>
+<h1 id="5-身体质量指数BMI问题分析"><a href="#5-身体质量指数BMI问题分析" class="headerlink" title="5.身体质量指数BMI问题分析"></a>5.身体质量指数BMI问题分析</h1><span class='p red center'>身体质量指数（BMI）=体重（kg）/ 身高<sup>2</sup>（m）</span>
+<p><img src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/bmi.png" alt=""></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">height, weight = <span class="built_in">eval</span>(<span class="built_in">input</span>(<span class="string">&quot;请输入身高(米)和体重(公斤)[逗号隔开]: &quot;</span>)) </span><br><span class="line">bmi = weight / <span class="built_in">pow</span>(height, <span class="number">2</span>) </span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;BMI 数值为：&#123;:.2f&#125;&quot;</span>.<span class="built_in">format</span>(bmi)) </span><br><span class="line">who, nat = <span class="string">&quot;&quot;</span>, <span class="string">&quot;&quot;</span> </span><br><span class="line"><span class="keyword">if</span> bmi &lt; <span class="number">18.5</span>: </span><br><span class="line">	who, nat = <span class="string">&quot;偏瘦&quot;</span>, <span class="string">&quot;偏瘦&quot;</span></span><br><span class="line"><span class="keyword">elif</span> <span class="number">18.5</span> &lt;= bmi &lt; <span class="number">24</span>: </span><br><span class="line">	who, nat = <span class="string">&quot;正常&quot;</span>, <span class="string">&quot;正常&quot;</span></span><br><span class="line"><span class="keyword">elif</span> <span class="number">24</span> &lt;= bmi &lt; <span class="number">25</span>: </span><br><span class="line">	who, nat = <span class="string">&quot;正常&quot;</span>, <span class="string">&quot;偏胖&quot;</span></span><br><span class="line"><span class="keyword">elif</span> <span class="number">25</span> &lt;= bmi &lt; <span class="number">28</span>: </span><br><span class="line">	who, nat = <span class="string">&quot;偏胖&quot;</span>, <span class="string">&quot;偏胖&quot;</span></span><br><span class="line"><span class="keyword">elif</span> <span class="number">28</span> &lt;= bmi &lt; <span class="number">30</span>: </span><br><span class="line">	who, nat = <span class="string">&quot;偏胖&quot;</span>, <span class="string">&quot;肥胖&quot;</span></span><br><span class="line"><span class="keyword">else</span>: </span><br><span class="line">	who, nat = <span class="string">&quot;肥胖&quot;</span>, <span class="string">&quot;肥胖&quot;</span> </span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;BMI 指标为:国际&#x27;&#123;0&#125;&#x27;, 国内&#x27;&#123;1&#125;&#x27;&quot;</span>.<span class="built_in">format</span>(who, nat))</span><br></pre></td></tr></table></figure>
+<h1 id="6-圆周率的计算"><a href="#6-圆周率的计算" class="headerlink" title="6.圆周率的计算"></a>6.圆周率的计算</h1><p><strong>由蒙特卡洛方法在正方形区域内随机撒点，计算它们与中心点的距离是否大于圆的半径，以此判断是否落在圆的内部，可得圆面积与方形面积的比值，方形面积又是确定的，可得圆面积，由此就能得到圆周率</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/pi.png" alt=""></p>
+<div class="tip warning"><p>Python3.8之后不再支持<span class='p blue'>time.clock()</span>，所以在此使用<span class='p blue'>time.perf_counter()</span>替换</p>
+</div>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> random <span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> perf_counter</span><br><span class="line"></span><br><span class="line"><span class="comment"># 随机投点数</span></span><br><span class="line">DARTS = <span class="number">1000</span></span><br><span class="line"><span class="comment">#计 数(撒在圆上面的点)</span></span><br><span class="line">hits = <span class="number">0.0</span></span><br><span class="line">start = perf_counter()</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, DARTS+<span class="number">1</span>):</span><br><span class="line">    x,y = random(),random()</span><br><span class="line">    <span class="comment"># 计算半径</span></span><br><span class="line">    dist = <span class="built_in">pow</span>(x ** <span class="number">2</span> + y ** <span class="number">2</span>, <span class="number">0.5</span>)</span><br><span class="line">    <span class="keyword">if</span> dist &lt;= <span class="number">1.0</span>:</span><br><span class="line">        hits = hits +<span class="number">1</span></span><br><span class="line">pi = <span class="number">4</span> * (hits/DARTS)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;圆周率的值是：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(pi))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;运行的时间是：&#123;:.5f&#125;s&quot;</span>.<span class="built_in">format</span>(perf_counter() - start))</span><br></pre></td></tr></table></figure>
+<div class="tip warning"><p>这里使用pow来计算半径，即计算(x<sup>2</sup>+y<sup>2</sup>)的0.5次方，免去了引入math库</p>
+</div>
+<p>当然也可以在上述代码中增加引入math库来计算半径，如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> math <span class="keyword">import</span> sqrt</span><br><span class="line">dist = sqrt(x ** <span class="number">2</span> + y ** <span class="number">2</span>)</span><br></pre></td></tr></table></figure>
+<h1 id="7-七段数码管的绘制"><a href="#7-七段数码管的绘制" class="headerlink" title="7.七段数码管的绘制"></a>7.七段数码管的绘制</h1><p>内容较多，故不展开介绍</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle <span class="keyword">as</span> t</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">drawgap</span>():</span></span><br><span class="line">    t.pu()</span><br><span class="line">    t.fd(<span class="number">5</span>)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">drawline</span>(<span class="params">draw</span>):</span><span class="comment">#绘制单段数码管</span></span><br><span class="line">    t.pendown() <span class="keyword">if</span> draw <span class="keyword">else</span> t.penup()</span><br><span class="line">    t.fd(<span class="number">40</span>)</span><br><span class="line">    drawgap()</span><br><span class="line">    t.right(<span class="number">90</span>)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">drawdigit</span>(<span class="params">digit</span>):</span><span class="comment">#根据数值绘制七段数码管</span></span><br><span class="line">    drawline(<span class="literal">True</span>) <span class="keyword">if</span> digit <span class="keyword">in</span> [<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">8</span>,<span class="number">9</span>] <span class="keyword">else</span> drawline(<span class="literal">False</span>)</span><br><span class="line">    drawline(<span class="literal">True</span>) <span class="keyword">if</span> digit <span class="keyword">in</span> [<span class="number">0</span>,<span class="number">1</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>] <span class="keyword">else</span> drawline(<span class="literal">False</span>)</span><br><span class="line">    drawline(<span class="literal">True</span>) <span class="keyword">if</span> digit <span class="keyword">in</span> [<span class="number">0</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">8</span>,<span class="number">9</span>] <span class="keyword">else</span> drawline(<span class="literal">False</span>)</span><br><span class="line">    drawline(<span class="literal">True</span>) <span class="keyword">if</span> digit <span class="keyword">in</span> [<span class="number">0</span>,<span class="number">2</span>,<span class="number">6</span>,<span class="number">8</span>] <span class="keyword">else</span> drawline(<span class="literal">False</span>)</span><br><span class="line">    t.left(<span class="number">90</span>)</span><br><span class="line">    drawline(<span class="literal">True</span>) <span class="keyword">if</span> digit <span class="keyword">in</span> [<span class="number">0</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">8</span>,<span class="number">9</span>] <span class="keyword">else</span> drawline(<span class="literal">False</span>)</span><br><span class="line">    drawline(<span class="literal">True</span>) <span class="keyword">if</span> digit <span class="keyword">in</span> [<span class="number">0</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>] <span class="keyword">else</span> drawline(<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line">    drawline(<span class="literal">True</span>) <span class="keyword">if</span> digit <span class="keyword">in</span> [<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>] <span class="keyword">else</span> drawline(<span class="literal">False</span>)</span><br><span class="line">    t.left(<span class="number">180</span>)</span><br><span class="line">    t.pu()<span class="comment">#为绘制后续数字确定位置</span></span><br><span class="line">    t.fd(<span class="number">20</span>)<span class="comment">#为绘制后续数字确定位置</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">drawdate</span>(<span class="params">date</span>):</span><span class="comment">#获取日期</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> date:</span><br><span class="line">        drawdigit(<span class="built_in">eval</span>(i))<span class="comment">#通过eval()将数字变成整数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>(<span class="params">date</span>):</span></span><br><span class="line">    t.setup(<span class="number">800</span>,<span class="number">350</span>,<span class="number">200</span>,<span class="number">200</span>)</span><br><span class="line">    t.pu()</span><br><span class="line">    t.fd(-<span class="number">300</span>)</span><br><span class="line">    t.pensize(<span class="number">5</span>)</span><br><span class="line">    t.color(<span class="string">&quot;red&quot;</span>)</span><br><span class="line">    drawdate(date)</span><br><span class="line">    t.hideturtle()</span><br><span class="line">    t.done()</span><br><span class="line">main(<span class="built_in">input</span>(<span class="string">&quot;请输入一个年月日，与阿拉伯数字形式不加任何标点的形式输入，例：20190122:\n&quot;</span>))</span><br></pre></td></tr></table></figure>
+<h1 id="8-科赫雪花的绘制"><a href="#8-科赫雪花的绘制" class="headerlink" title="8.科赫雪花的绘制"></a>8.科赫雪花的绘制</h1><h2 id="1-科赫曲线"><a href="#1-科赫曲线" class="headerlink" title="(1).科赫曲线"></a>(1).科赫曲线</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># KochDrawV1.py</span></span><br><span class="line"><span class="keyword">import</span> turtle                               <span class="comment"># 引入工具——turtle作图包</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">koch</span>(<span class="params">size, n</span>):</span>                          <span class="comment"># 定义一个koch函数</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">0</span>:                              <span class="comment"># 0阶的科赫雪花曲线就是一条线，大小为输入的“size”</span></span><br><span class="line">        turtle.fd(size)</span><br><span class="line">    <span class="keyword">else</span>:                                   <span class="comment"># 高阶科赫雪花曲线</span></span><br><span class="line">        <span class="keyword">for</span> angle <span class="keyword">in</span> [<span class="number">0</span>, <span class="number">60</span>, -<span class="number">120</span>, <span class="number">60</span>]:     <span class="comment"># 四条线上改变的角度，分别为0°，60°，-120°，60°</span></span><br><span class="line">            turtle.left(angle)              <span class="comment"># 对应上边四个角度，一共需要转4次弯，画出本阶的四条线</span></span><br><span class="line">            koch(size / <span class="number">3</span>, n - <span class="number">1</span>)           <span class="comment"># 每个角度下的一个边，对应低一阶的科赫雪花曲线的“尖”；至此完成函数本身的循环和复用，自动画出一个完整的n阶“尖”</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span>                                 <span class="comment"># 定义函数main            </span></span><br><span class="line">    turtle.setup(<span class="number">800</span>, <span class="number">400</span>)                  <span class="comment"># 设置画布大小为宽800像素，高400像素</span></span><br><span class="line">    turtle.penup()                          <span class="comment"># 抬起画笔，之后的画笔动作，就不会产生图线</span></span><br><span class="line">    turtle.goto(-<span class="number">300</span>, -<span class="number">50</span>)                  <span class="comment"># 以画布中心点为原点(0,0)，将画笔移动到(-300,-50)处</span></span><br><span class="line">    turtle.pendown()                        <span class="comment"># 落下画笔，以便画图</span></span><br><span class="line">    turtle.pensize(<span class="number">2</span>)                       <span class="comment"># 设置画笔宽度为2</span></span><br><span class="line">    koch(<span class="number">600</span>, <span class="number">3</span>)                            <span class="comment"># 调用函数koch，设置0阶科赫曲线长度为600，阶数为3</span></span><br><span class="line">    turtle.hideturtle()                     <span class="comment"># 隐藏海龟</span></span><br><span class="line">main()                                      <span class="comment"># 调用函数main</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/koch00.png" alt=""></p>
+<h2 id="2-科赫雪花"><a href="#2-科赫雪花" class="headerlink" title="(2).科赫雪花"></a>(2).科赫雪花</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># KochDrawV2.py</span></span><br><span class="line"><span class="keyword">import</span> turtle                               <span class="comment"># 引入工具——turtle作图包</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">koch</span>(<span class="params">size, n</span>):</span>                          <span class="comment"># 定义一个koch函数</span></span><br><span class="line">    <span class="keyword">if</span> n == <span class="number">0</span>:                              <span class="comment"># 0阶的科赫雪花曲线就是一条线，大小为输入的“size”</span></span><br><span class="line">        turtle.fd(size)</span><br><span class="line">    <span class="keyword">else</span>:                                   <span class="comment"># 高阶科赫雪花曲线</span></span><br><span class="line">        <span class="keyword">for</span> angle <span class="keyword">in</span> [<span class="number">0</span>, <span class="number">60</span>, -<span class="number">120</span>, <span class="number">60</span>]:     <span class="comment"># 四条线上改变的角度，分别为0°，60°，-120°，60°</span></span><br><span class="line">            turtle.left(angle)              <span class="comment"># 对应上边四个角度，一共需要转4次弯，画出本阶的四条线</span></span><br><span class="line">            koch(size / <span class="number">3</span>, n - <span class="number">1</span>)           <span class="comment"># 每个角度下的一个边，对应低一阶的科赫雪花曲线的“尖”；至此完成函数本身的循环和复用，自动画出一个完整的n阶“尖”</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span>                                 <span class="comment"># 定义函数main            </span></span><br><span class="line">    turtle.setup(<span class="number">600</span>, <span class="number">600</span>)                  <span class="comment"># 设置画布大小为宽600像素，高600像素</span></span><br><span class="line">    turtle.penup()                          <span class="comment"># 抬起画笔，之后的画笔动作，就不会产生图线</span></span><br><span class="line">    turtle.goto(-<span class="number">200</span>, <span class="number">100</span>)                  <span class="comment"># 以画布中心点为原点(0,0)，将画笔移动到(-200,100)处</span></span><br><span class="line">    turtle.pendown()                        <span class="comment"># 落下画笔，以便画图</span></span><br><span class="line">    turtle.pensize(<span class="number">2</span>)                       <span class="comment"># 设置画笔宽度为2</span></span><br><span class="line">    level = <span class="number">5</span>                               <span class="comment"># 赋值变量level=5，即科赫雪花阶数=5</span></span><br><span class="line">    koch(<span class="number">400</span>, level)                        <span class="comment"># 调用函数koch，设置0阶科赫曲线长度为400，阶数n为变量level，即为5</span></span><br><span class="line">    turtle.right(<span class="number">120</span>)</span><br><span class="line">    koch(<span class="number">400</span>, level)                        <span class="comment"># 完整的科赫雪花由3条科赫曲线组成</span></span><br><span class="line">    turtle.right(<span class="number">120</span>)                       <span class="comment"># 每条科赫曲线作图完成后，画笔方向向右旋转120°继续作图</span></span><br><span class="line">    koch(<span class="number">400</span>, level)</span><br><span class="line">    turtle.hideturtle()                     <span class="comment"># 隐藏海龟</span></span><br><span class="line">main()                                      <span class="comment"># 调用函数main</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/koch.png" alt=""></p>
+<h1 id="9-基本统计值计算"><a href="#9-基本统计值计算" class="headerlink" title="9.基本统计值计算"></a>9.基本统计值计算</h1><div class="tip warning"><p>这里同样使用pow来计算平方根，即计算0.5次方，免去了引入math库</p>
+</div>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 计算基本统计值（平均值、标准差、中位数）‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬除中位数外，其他输出保留小数点后两位</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getNum</span>():</span></span><br><span class="line">    nums = []</span><br><span class="line">    iNumStr = <span class="built_in">input</span>(<span class="string">&quot;请输入数字(回车退出):&quot;</span>)</span><br><span class="line">    <span class="keyword">while</span> iNumStr != <span class="string">&quot;&quot;</span>:    <span class="comment"># 死循环判断为空退出，不为空就继续输入并添加到列表里</span></span><br><span class="line">        nums.append(<span class="built_in">eval</span>(iNumStr))</span><br><span class="line">        iNumStr = <span class="built_in">input</span>(<span class="string">&quot;请输入数字(回车退出):&quot;</span>)</span><br><span class="line">    <span class="keyword">return</span> nums</span><br><span class="line"><span class="comment"># 计算平均值，必须先求和，用总和数 除以 总个数等于平均值</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">mean</span> (<span class="params">numbers</span>):</span>          <span class="comment"># 例：numbers=1,2,3  共3个数字</span></span><br><span class="line">    s = <span class="number">0.0</span>                  <span class="comment"># 定义一个结果为0</span></span><br><span class="line">    <span class="keyword">for</span> num <span class="keyword">in</span> numbers:</span><br><span class="line">        s = s +num           <span class="comment"># 和是1+2+3=6 那么s=6</span></span><br><span class="line">    <span class="keyword">return</span> s / <span class="built_in">len</span>(numbers)  <span class="comment"># 6除以3等于平均值2</span></span><br><span class="line"><span class="comment"># 计算方差,需要算出平均值</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">dev</span>(<span class="params">numbers,mean</span>):</span>              <span class="comment"># 两参数用户输入列表和平均值</span></span><br><span class="line">    sdev = <span class="number">0.0</span>                      <span class="comment"># 例：numbers=1,2,3,4 共4个数字 上一步算出平均值2.5</span></span><br><span class="line">    <span class="keyword">for</span> num <span class="keyword">in</span> numbers:             <span class="comment"># (1-2.5)**2==2.25 sdev=2.25</span></span><br><span class="line">        sdev = sdev + (num - mean)**<span class="number">2</span>  <span class="comment"># 逐一取数减平均值再得出平方，累加到sdev里</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">pow</span>(sdev / (<span class="built_in">len</span>(numbers)-<span class="number">1</span>),<span class="number">0.5</span>) <span class="comment"># sdev除(4-1)==0.75的0.5次方==1.299</span></span><br><span class="line"><span class="comment"># 计算中位数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">median</span>(<span class="params">numbers</span>):</span></span><br><span class="line">    numbers.sort()   <span class="comment"># 进行原列表排序，使用sorted排序必须有返回值numbers = sorted(numbers)</span></span><br><span class="line">    size = <span class="built_in">len</span>(numbers)   <span class="comment"># 例：numbers=1,2,3,4    size=4</span></span><br><span class="line">    <span class="keyword">if</span> size % <span class="number">2</span> ==<span class="number">0</span>:    <span class="comment"># 判断为偶数取中间两位数，4//2-1 =1  切片是从0开始所以减1位</span></span><br><span class="line">        med = (numbers[size//<span class="number">2</span>-<span class="number">1</span>] + numbers[size//<span class="number">2</span>])/<span class="number">2</span>  <span class="comment"># //为整除，/为浮点数</span></span><br><span class="line">    <span class="keyword">else</span>:              <span class="comment"># 或为奇数，切片总长度除2，取中间一位</span></span><br><span class="line">        med = numbers[size//<span class="number">2</span>]</span><br><span class="line">    <span class="keyword">return</span> med</span><br><span class="line"> </span><br><span class="line">n = getNum()</span><br><span class="line">m = mean(n)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;平均值:&#123;&#125;,方差:&#123;:.2&#125;,中位数:&#123;&#125;&quot;</span>.<span class="built_in">format</span>(m,dev(n,m),median(n)))</span><br></pre></td></tr></table></figure>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>Python实例合集</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="http://shesays.xyz/posts/aab49def.html">http://shesays.xyz/posts/aab49def.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>漓曜</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2021-12-10</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2021-12-23</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Python/">Python</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://unpkg.com/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://unpkg.com/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="Wechat(求赏饭)"/></a><div class="post-qr-code-desc">Wechat(求赏饭)</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="Alipay(求赏饭)"/></a><div class="post-qr-code-desc">Alipay(求赏饭)</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/cd41a811.html"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover1.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Markdown学习笔记</div></div></a></div><div class="next-post pull-right"><a href="/posts/86105800.html"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover12.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Python语言程序设计（一）</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/86105800.html" title="Python语言程序设计（一）"><img class="cover" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover12.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-09</div><div class="title">Python语言程序设计（一）</div></div></a></div><div><a href="/posts/fdaa036.html" title="Python学习笔记（input函数）"><img class="cover" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover10.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-02</div><div class="title">Python学习笔记（input函数）</div></div></a></div><div><a href="/posts/4e6c8197.html" title="Python学习笔记（转义字符）"><img class="cover" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover9.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-02</div><div class="title">Python学习笔记（转义字符）</div></div></a></div><div><a href="/posts/fa2e52a3.html" title="Python学习笔记（数据类型转换）"><img class="cover" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover7.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-02</div><div class="title">Python学习笔记（数据类型转换）</div></div></a></div><div><a href="/posts/8dce54be.html" title="Python学习笔记（常见数据类型）"><img class="cover" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover5.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-02</div><div class="title">Python学习笔记（常见数据类型）</div></div></a></div><div><a href="/posts/8a9da796.html" title="Python学习笔记（二进制与字符编码）"><img class="cover" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover6.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-02</div><div class="title">Python学习笔记（二进制与字符编码）</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E7%BB%98%E5%88%B6%E5%90%8C%E5%88%87%E5%9C%86"><span class="toc-number">1.</span> <span class="toc-text">1.绘制同切圆</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E6%B8%A9%E5%BA%A6%E8%BD%AC%E6%8D%A2%E5%AE%9E%E4%BE%8B"><span class="toc-number">2.</span> <span class="toc-text">2.温度转换实例</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-eval%E5%87%BD%E6%95%B0"><span class="toc-number">2.1.</span> <span class="toc-text">(1).eval函数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-format%E5%87%BD%E6%95%B0"><span class="toc-number">2.2.</span> <span class="toc-text">(2).format函数</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E5%A4%A9%E5%A4%A9%E5%90%91%E4%B8%8A%E7%9A%84%E5%8A%9B%E9%87%8F"><span class="toc-number">3.</span> <span class="toc-text">3.天天向上的力量</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E6%96%87%E6%9C%AC%E8%BF%9B%E5%BA%A6%E6%9D%A1"><span class="toc-number">4.</span> <span class="toc-text">4.文本进度条</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-%E8%BA%AB%E4%BD%93%E8%B4%A8%E9%87%8F%E6%8C%87%E6%95%B0BMI%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90"><span class="toc-number">5.</span> <span class="toc-text">5.身体质量指数BMI问题分析</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-%E5%9C%86%E5%91%A8%E7%8E%87%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">6.</span> <span class="toc-text">6.圆周率的计算</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7-%E4%B8%83%E6%AE%B5%E6%95%B0%E7%A0%81%E7%AE%A1%E7%9A%84%E7%BB%98%E5%88%B6"><span class="toc-number">7.</span> <span class="toc-text">7.七段数码管的绘制</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#8-%E7%A7%91%E8%B5%AB%E9%9B%AA%E8%8A%B1%E7%9A%84%E7%BB%98%E5%88%B6"><span class="toc-number">8.</span> <span class="toc-text">8.科赫雪花的绘制</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%A7%91%E8%B5%AB%E6%9B%B2%E7%BA%BF"><span class="toc-number">8.1.</span> <span class="toc-text">(1).科赫曲线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E7%A7%91%E8%B5%AB%E9%9B%AA%E8%8A%B1"><span class="toc-number">8.2.</span> <span class="toc-text">(2).科赫雪花</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#9-%E5%9F%BA%E6%9C%AC%E7%BB%9F%E8%AE%A1%E5%80%BC%E8%AE%A1%E7%AE%97"><span class="toc-number">9.</span> <span class="toc-text">9.基本统计值计算</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-image: url(/img/fbg.png)"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 ❤ 漓曜</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://unpkg.com/medium-zoom/dist/medium-zoom.min.js"></script><script src="https://unpkg.com/instant.page/instantpage.min.js" type="module"></script><script src="https://unpkg.com/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})
+setTimeout(function(){preloader.endLoading();}, 3000);</script></div><div class="js-pjax"><script>(()=>{
+  const $countDom = document.getElementById('twikoo-count')
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo-ashen.vercel.app/',
+      region: 'AWS / N. Virginia (us-east-1)'
+    }, null))
+  }
+
+  const getCount = () => {
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo-ashen.vercel.app/',
+      region: 'AWS / N. Virginia (us-east-1)',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      $countDom.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const loadTwikoo = (bool = false) => {
+    if (typeof twikoo === 'object') {
+      init()
+      bool && $countDom && setTimeout(getCount,0)
+    } else {
+      getScript('https://unpkg.com/twikoo/dist/twikoo.all.min.js').then(()=> {
+        init()
+        bool && $countDom && setTimeout(getCount,0)
+      })
+    }
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo(true)
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><div class="aplayer no-destroy" data-id="7023976103" data-server="netease" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="true" data-order="random" data-preload="auto" data-autoplay="false" muted></div><script defer src="/live2d-widget/autoload.js"></script><script async src="/js/grayscale.js"></script><script async src="//at.alicdn.com/t/font_3028441_npxfr6ov5jm.js"></script><script id="click-heart" src="https://unpkg.com/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><link rel="stylesheet" href="https://unpkg.com/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://unpkg.com/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://unpkg.com/pjax/pjax.min.js"></script><script>let pjaxSelectors = [
+  'title',
+  '#config-diff',
+  '#body-wrap',
+  '#rightside-config-hide',
+  '#rightside-config-show',
+  '.js-pjax'
+]
+
+if (false) {
+  pjaxSelectors.unshift('meta[property="og:image"]', 'meta[property="og:title"]', 'meta[property="og:url"]')
+}
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.removeEventListener('scroll', window.tocScrollFn)
+  window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // Analytics
+  if (false) {
+    MtaH5.pgv()
+  }
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>
+  function card_artitalk_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-shuo"><div class="card-content" style="height:auto;min-height:280px;"><div class="item-headline"><i class="fas fa-comments"></i><span><a href="/artitalk/" title="artitalk page link">碎碎念</a></span><a id="cardVisual" style="cursor:pointer;float:right" onclick="cardVisual()">编辑</a></div><div id="artitalk_main" style="width:100%;height:100%;padding:1px"></div></div></div>';
+    console.log('已挂载card_artitalk');
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html);
+    (()=>{
+      const init = () => {
+        new Artitalk(Object.assign({
+          appId: 'JDHXtHmaJtbaE0PcJMBRePjs-MdYXbMMI',
+          appKey: 'omKye2lCO9pzViy6H6FoCiqp',
+        }, {"serverURL":"https://jdhxthma.api.lncldglobal.com","lang":"zh","pageSize":1,"color1":"#49b1f5","color2":"#00c4b6","atEmoji":{"Mafumafu1":"https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Mafumafu/199749454.png","Mafumafu2":"https://cdn.jsdelivr.net/gh/GamerNoTitle/ValineCDN@master/Mafumafu/199749455.png"}} ))
+      }
+      if (typeof Artitalk === 'function') {
+        init()
+      } else {
+        getScript('https://unpkg.com/artitalk').then(init)
+      }
+    })()
+    }
+  var elist = '/artitalk/,/posts/'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    card_artitalk_injector_config();
+  }
+  else if (epage === cpage){
+    card_artitalk_injector_config();
+  }
+  </script><script async src="https://cdn.jsdelivr.net/npm/hexo-butterfly-artitalk-pro/lib/card_visual.js"></script><script data-pjax>
+  function butterfly_clock_injector_config(){
+    var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
+    var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img class="entered loading" id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading"/></div></div></div></div></div>';
+    console.log('已挂载butterfly_clock')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_clock_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_clock_injector_config();
+  }
+  </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax src="https://cdn.jsdelivr.net/npm/hexo-butterfly-clock/lib/clock.min.js"></script><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="ghbdages" style="overflow:hidden;max-height:90px;height:auto;text-align:center;margin-top:10px"><div class="swiper-wrapper"><div class="swiper-slide"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v5.4.0"><img src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v3.8.2"><img src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://www.jsdelivr.com/" style="margin-inline:5px" title="本站使用UNPKG为静态资源提供CDN加速"><img src="https://img.shields.io/badge/CDN-UNPKG-black?style=flat&amp;logo=UNPKG" alt=""/></a></div><div class="swiper-slide"><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用单线部署，默认线路托管于Vercel"><img src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本站项目由Github托管"><img src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></div></div></div><style>a.github-badge:hover:before {display:none}</style>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script defer src="https://unpkg.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://unpkg.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/cd41a811.html" alt=""><img width="48" height="48" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover1.jpg" alt="" onerror="this.src=https://cdn.jsdelivr.net/npm/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2021-12-13</span><a class="blog-slider__title" href="posts/cd41a811.html" alt="">Markdown学习笔记</a><div class="blog-slider__text">初步学习Markdown语法</div><a class="blog-slider__button" href="posts/cd41a811.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/aab49def.html" alt=""><img width="48" height="48" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover2.jpg" alt="" onerror="this.src=https://cdn.jsdelivr.net/npm/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2021-12-10</span><a class="blog-slider__title" href="posts/aab49def.html" alt="">Python实例合集</a><div class="blog-slider__text">一些Python实例，其实是为了考试整理的</div><a class="blog-slider__button" href="posts/aab49def.html" alt="">详情   </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" href="posts/817d6c7f.html" alt=""><img width="48" height="48" src="https://cdn.jsdelivr.net/gh/pluto795/blogpic/img/cover3.jpg" alt="" onerror="this.src=https://cdn.jsdelivr.net/npm/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2021-12-09</span><a class="blog-slider__title" href="posts/817d6c7f.html" alt="">Tag Plugins Plus（转载）</a><div class="blog-slider__text">本文档为🧊Akilarの糖果屋🍭出品。为butterfly主题添加大量外挂标签样式。</div><a class="blog-slider__button" href="posts/817d6c7f.html" alt="">详情   </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://cdn.bootcdn.net/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script><script defer data-pjax src="https://cdn.jsdelivr.net/npm/hexo-butterfly-swiper/lib/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '500ms');
+    arr[i].setAttribute('data-wow-offset', '100');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '');
+    arr[i].setAttribute('data-wow-delay', '');
+    arr[i].setAttribute('data-wow-offset', '');
+    arr[i].setAttribute('data-wow-iteration', '');
+  }</script></div><script defer src="https://cdn.jsdelivr.net/gh/graingert/wow@1.3.0/dist/wow.min.js"></script><script defer src="https://cdn.jsdelivr.net/npm/hexo-butterfly-wowjs/lib/wow_init.min.js"></script><script data-pjax src="https://cdn.jsdelivr.net/npm/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+                        function gitcalendar_injector_config(){
+                          var parent_div_git = document.getElementById('recent-posts');
+                          var item_html = '<div class="recent-post-item" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 280px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+                          parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+                          console.log('已挂载gitcalendar')
+                          }
+
+                        if( document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+                            gitcalendar_injector_config()
+                            GitCalendarInit("https://python-github-calendar-api-gold.vercel.app/api?pluto795",['#ebedf0', '#f1f8ff', '#dbedff', '#c8e1ff', '#79b8ff', '#2188ff', '#0366d6', '#005cc5', '#044289', '#032f62', '#05264c'],'pluto795')
+                        }
+                      </script><script async src="//at.alicdn.com/t/font_2032782_8d5kxvn09md.js"></script><!-- hexo injector body_end end --></body></html>
