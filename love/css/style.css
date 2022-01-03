@@ -17,7 +17,7 @@ body {
   justify-content: space-between;
 }
 .header .blog-title .logo {
-  color: #fd637d;
+  color: #5E528C;
   font-size: 2em;
   font-family: "Comic Sans MS", cursive, LiSu, sans-serif;
   text-decoration: none;
@@ -25,14 +25,14 @@ body {
 .header .menu {
   margin: 0;
   padding: 0;
-  color: #fd637d;
+  color: #424266;
 }
 .header .menu .menu-item {
   display: inline-block;
   margin-right: 10px;
 }
 .header .menu .menu-item-link {
-  color: #fd637d;
+  color: #424266;
   text-decoration: none;
 }
 .header .menu .menu-item-link:hover {
@@ -45,7 +45,7 @@ body {
 }
 h2 {
   font-size: 30px;
-  color: #fd637d;
+  color: #424266;
 }
 .timer {
   font-size: 30px;
@@ -53,5 +53,5 @@ h2 {
   margin: 1em 0;
 }
 .timer b {
-  color: #fd637d;
+  color: #424266;
 }
