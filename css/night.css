@@ -115,7 +115,6 @@ body.night .navbar-main .navbar-menu .navbar-item:focus {
   background-color: #373d48;
 }
 body.night .navbar,
-body.night .navbar-menu,
 body.night .card {
   background-color: rgba(40,44,52,0.5);
   backdrop-filter: none;
@@ -303,12 +302,14 @@ body.night article.article .title:hover a,
 body.night article.media .title:hover a {
   color: #c0c0c0 !important;
 }
+body.night .widget .tags .tag:last-child,
 body.night .tag:not(body) {
   color: #c0c0c0;
   background-color: #373d48;
 }
 body.night .widget .tags .tag:first-child,
 body.night .tag.is-grey {
+  color: #c0c0c0;
   background-color: #434a56;
 }
 body.night .menu-list a:hover {
@@ -480,7 +481,6 @@ body.night .twikoo code {
     background-color: #373d48;
   }
   body:not(.light) .navbar,
-  body:not(.light) .navbar-menu,
   body:not(.light) .card {
     background-color: rgba(40,44,52,0.5);
     backdrop-filter: none;
@@ -668,12 +668,14 @@ body.night .twikoo code {
   body:not(.light) article.media .title:hover a {
     color: #c0c0c0 !important;
   }
+  body:not(.light) .widget .tags .tag:last-child,
   body:not(.light) .tag:not(body) {
     color: #c0c0c0;
     background-color: #373d48;
   }
   body:not(.light) .widget .tags .tag:first-child,
   body:not(.light) .tag.is-grey {
+    color: #c0c0c0;
     background-color: #434a56;
   }
   body:not(.light) .menu-list a:hover {
